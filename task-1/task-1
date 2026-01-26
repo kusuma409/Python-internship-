@@ -1,0 +1,14 @@
+# User name ni input ga teesukuntunnam
+name = input("Enter your name: ")
+
+# Internship role ni user nundi teesukuntunnam
+role = input("Enter your internship role: ")
+
+# Today's date ni variable lo store chestunnam
+date = "26-01-2026"
+
+# Output ni print chestunnam
+print("Hello", name)
+print("Welcome to the Python Developer Internship")
+print("Role:", role)
+print("Date:", date)
