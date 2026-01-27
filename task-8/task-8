@@ -1,0 +1,30 @@
+import csv
+
+print("PROGRAM STARTED")
+
+with open("user_data.txt", "w") as f:
+    f.write("Name: Kusuma\n")
+    f.write("Role: Python Intern\n")
+    f.write("Company: Elevate Labs\n")
+
+with open("user_data.txt", "a") as f:
+    f.write("Status: Active\n")
+
+print("\nTXT FILE CONTENT:")
+with open("user_data.txt", "r") as f:
+    print(f.read())
+
+with open("students.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(["ID", "Name", "Course"])
+    writer.writerow([1, "Chinny", "Python"])
+    writer.writerow([2, "Bhumika", "Data Science"])
+    writer.writerow([3, "Komali", "AI"])
+
+print("\nCSV FILE CONTENT:")
+with open("students.csv", "r") as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
+
+print("\nPROGRAM END")
